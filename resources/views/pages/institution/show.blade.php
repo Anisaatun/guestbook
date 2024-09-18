@@ -15,6 +15,10 @@
                    <td>Institution</td>
                    <td>{{ $institution->name }}</td>
                </tr>
+                <tr>
+                   <td>ID</td>
+                   <td>{{ $institution->id }}</td>
+               </tr>
                <tr>
                   <td>Created at</td>
                   <td>{{ Carbon\Carbon::parse($institution->created_at)->isoFormat('DD MMMM Y HH:mm') }}</td>

@@ -24,6 +24,12 @@
                                 <span>Institution</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a href="{{ route('admin.guests.index') }}" class='sidebar-link'>
+                                <i class="bi bi-people"></i>
+                                <span>Guests</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
