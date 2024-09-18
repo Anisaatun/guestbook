@@ -12,4 +12,8 @@ Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function() {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+
+    //Routing CRUD dari institution
+    Route::resource('/institution', App\Http\Controllers\InstitutionController::class);
 });
+

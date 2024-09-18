@@ -13,9 +13,15 @@
                 <div class="sidebar-menu">
                     <ul class="menu">
                         <li class="sidebar-item">
-                            <a href={{ route('admin.dashboard') }}class='sidebar-link'>
+                            <a href="{{ route('admin.dashboard') }}" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="{{ route('admin.institution.index') }}" class='sidebar-link'>
+                                <i class="bi bi-building"></i>
+                                <span>Institution</span>
                             </a>
                         </li>
                     </ul>
